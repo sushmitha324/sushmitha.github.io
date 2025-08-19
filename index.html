@@ -43,22 +43,45 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Fill in the form below and I’ll get back to you:</p>
-    <!-- 🔹 Replace this with your Salesforce Web-to-Lead Form later -->
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Enter your name" required>
+  <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="enter your email" required>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-      <label for="message">Message:</label>
-      <textarea id="message" placeholder="message" required></textarea>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
-      <button type="submit">Send</button>
-    </form>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000008nnhJ" method="POST">
+
+<input type=hidden name="oid" value="00DgK000008nnhJ">
+<input type=hidden name="retURL" value="http://">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="sushmithab458@gmail.com">                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+Message:<input  id="00NgK00001LJDjK" maxlength="100" name="00NgK00001LJDjK" size="20" type="text" /><br>
+
+<input type="submit" name="submit">
+
+</form>
+
   </section>
 
   <!-- Footer -->
