@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
   background: #f4f4f4;
 }
 
@@ -44,44 +43,52 @@ section {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* Contact Form Styles */
-.contact-form {
-  margin-top: 20px;
+/* Contact Form Card Styles */
+.contact-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.contact-form label {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  display: block;      /* ensures each element is on its own line */
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+.contact-card .form-group {
   margin-bottom: 15px;
+}
+
+.contact-card label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-card input,
+.contact-card textarea {
+  display: block;
+  width: 100% !important;
+  padding: 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 16px;
   box-sizing: border-box;
 }
 
-.contact-form textarea {
+.contact-card textarea {
   resize: vertical;
 }
 
-.contact-form button {
+.contact-card button {
   background: #007BFF;
   color: white;
   border: none;
   cursor: pointer;
   font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
 }
 
-.contact-form button:hover {
+.contact-card button:hover {
   background: #0056b3;
 }
 
@@ -91,3 +98,5 @@ footer {
   padding: 20px 0;
   background: #007BFF;
   color: white;
+  margin-top: 40px;
+}
