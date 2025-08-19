@@ -41,19 +41,21 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <div class="contact-card">
-      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+  <!-- Your Salesforce Organization ID (from Setup → Company Information) -->
   <input type="hidden" name="oid" value="00DgK000008nnhJ">
+  <!-- Where to redirect after submit -->
   <input type="hidden" name="retURL" value="https://www.google.com">
 
-  <input id="first_name" name="first_name" type="text">
-  <input id="last_name"  name="last_name"  type="text" required>
-  <input id="company"    name="company"    type="text" required>
-  <input id="email"      name="email"      type="email" required>
+  <!-- DEBUG: get error details to your email -->
+  <input type="hidden" name="debug" value="1">
+  <input type="hidden" name="debugEmail" value="YOUR_EMAIL@example.com">
 
-  <!-- Custom field: keep the exact field id from Salesforce -->
-  <textarea id="message" name="00NgK00001LJDjK" rows="5"></textarea>
+  <!-- Required fields for Lead -->
+  <input id="last_name" name="last_name" type="text" placeholder="Last Name" required>
+  <input id="company" name="company" type="text" placeholder="Company" required>
 
-  <button type="submit">Send</button>
+  <button type="submit">Submit</button>
 </form>
     </div>
   </section>
