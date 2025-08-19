@@ -72,34 +72,42 @@ section {
 }
 
 /* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-form label {
-  margin: 10px 0 5px;
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-form input, form textarea {
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
   padding: 10px;
+  margin: 8px 0;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
-form button {
-  margin-top: 15px;
-  padding: 10px;
-  border: none;
-  background: #1e90ff;
+.contact-form button {
+  background: #007BFF;
   color: white;
-  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
 }
 
-form button:hover {
-  background: #005bbb;
+.contact-form button:hover {
+  background: #0056b3;
 }
+
 
 /* Footer */
 footer {
