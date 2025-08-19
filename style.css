@@ -58,9 +58,11 @@ section {
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
+  display: block;      /* ensures each element is on its own line */
   width: 100%;
   padding: 10px;
   margin-top: 5px;
+  margin-bottom: 15px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 16px;
@@ -75,7 +77,6 @@ section {
   background: #007BFF;
   color: white;
   border: none;
-  margin-top: 15px;
   cursor: pointer;
   font-weight: bold;
 }
@@ -90,5 +91,3 @@ footer {
   padding: 20px 0;
   background: #007BFF;
   color: white;
-  margin-top: 40px;
-}
