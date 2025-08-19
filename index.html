@@ -32,73 +32,35 @@
   <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="contact-form">
-  <h2>Contact Me</h2>
-  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-    <input type="hidden" name="oid" value="YOUR_SFDC_ORG_ID">
-    <input type="hidden" name="retURL" value="https://your-portfolio-site-url.com/thankyou.html">
-
-    <label for="first_name">First Name</label>
-    <input type="text" name="first_name" id="first_name">
-
-    <label for="last_name">Last Name *</label>
-    <input type="text" name="last_name" id="last_name" required>
-
-    <label for="company">Company *</label>
-    <input type="text" name="company" id="company" value="Portfolio Visitor" required>
-
-    <label for="email">Email *</label>
-    <input type="email" name="email" id="email" required>
-
-    <label for="description">Message</label>
-    <textarea name="description" id="description"></textarea>
-
-    <button type="submit">Send</button>
-  </form>
-</div>
-
+    <p>Here are some Salesforce projects I’ve worked on:</p>
+    <!-- You can add project cards here later -->
   </section>
 
   <!-- Contact Section -->
-  <!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000008nnhJ" method="POST">
 
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+      <input type="hidden" name="oid" value="00DgK000008nnhJ">
+      <input type="hidden" name="retURL" value="https://your-portfolio-site-url.com/thankyou.html">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+      <label for="first_name">First Name</label>
+      <input id="first_name" name="first_name" type="text">
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000008nnhJ" method="POST">
+      <label for="last_name">Last Name</label>
+      <input id="last_name" name="last_name" type="text" required>
 
-<input type=hidden name="oid" value="00DgK000008nnhJ">
-<input type=hidden name="retURL" value="http://">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="sushmithab458@gmail.com">                                        -->
-<!--  ----------------------------------------------------------------------  -->
+      <label for="company">Company</label>
+      <input id="company" name="company" type="text" value="Portfolio Visitor">
 
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+      <label for="message">Message</label>
+      <textarea id="message" name="00NgK00001LJDjK"></textarea>
 
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-
-Message:<input  id="00NgK00001LJDjK" maxlength="100" name="00NgK00001LJDjK" size="20" type="text" /><br>
-
-<input type="submit" name="submit">
-
-</form>
-
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <!-- Footer -->
@@ -107,4 +69,3 @@ Message:<input  id="00NgK00001LJDjK" maxlength="100" name="00NgK00001LJDjK" size
   </footer>
 </body>
 </html>
-"Added index.html"
