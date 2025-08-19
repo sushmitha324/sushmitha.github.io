@@ -32,14 +32,31 @@
   <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Automation with Flow</h3>
-      <p>Created Record-Triggered Flows to replace Process Builder, reducing governor limit issues.</p>
-    </div>
-    <div class="project-card">
-      <h3>Web-to-Lead Integration</h3>
-      <p>Built a contact form that directly creates Leads in Salesforce with auto-response emails.</p>
-    </div>
+    <div class="contact-form">
+  <h2>Contact Me</h2>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <input type="hidden" name="oid" value="YOUR_SFDC_ORG_ID">
+    <input type="hidden" name="retURL" value="https://your-portfolio-site-url.com/thankyou.html">
+
+    <label for="first_name">First Name</label>
+    <input type="text" name="first_name" id="first_name">
+
+    <label for="last_name">Last Name *</label>
+    <input type="text" name="last_name" id="last_name" required>
+
+    <label for="company">Company *</label>
+    <input type="text" name="company" id="company" value="Portfolio Visitor" required>
+
+    <label for="email">Email *</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="description">Message</label>
+    <textarea name="description" id="description"></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</div>
+
   </section>
 
   <!-- Contact Section -->
