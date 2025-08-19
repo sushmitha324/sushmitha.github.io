@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Navigation -->
   <header>
     <nav>
@@ -33,39 +34,43 @@
   <section id="projects">
     <h2>Projects</h2>
     <p>Here are some Salesforce projects I’ve worked on:</p>
-    <!-- You can add project cards here later -->
+    <!-- Add project cards or details here -->
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000008nnhJ" method="POST">
+    <div class="contact-form">
+      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000008nnhJ" method="POST">
 
-      <input type="hidden" name="oid" value="00DgK000008nnhJ">
-      <input type="hidden" name="retURL" value="https://your-portfolio-site-url.com/thankyou.html">
+        <!-- Salesforce required hidden fields -->
+        <input type="hidden" name="oid" value="00DgK000008nnhJ">
+        <input type="hidden" name="retURL" value="https://your-portfolio-site-url.com/thankyou.html">
 
-      <label for="first_name">First Name</label>
-      <input id="first_name" name="first_name" type="text">
+        <label for="first_name">First Name</label>
+        <input id="first_name" name="first_name" type="text">
 
-      <label for="last_name">Last Name</label>
-      <input id="last_name" name="last_name" type="text" required>
+        <label for="last_name">Last Name *</label>
+        <input id="last_name" name="last_name" type="text" required>
 
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" required>
+        <label for="company">Company *</label>
+        <input id="company" name="company" type="text" value="text" required>
 
-      <label for="company">Company</label>
-      <input id="company" name="company" type="text" value="Portfolio Visitor">
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="00NgK00001LJDjK"></textarea>
+        <label for="message">Message</label>
+        <textarea id="message" name="00NgK00001LJDjK" rows="5"></textarea>
 
-      <button type="submit">Send</button>
-    </form>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>&copy; 2025 My Salesforce Portfolio</p>
   </footer>
+
 </body>
 </html>
