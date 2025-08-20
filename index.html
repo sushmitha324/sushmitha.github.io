@@ -41,22 +41,45 @@
   <section id="contact">
     <h2>Contact Me</h2>
     <div class="contact-card">
-     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-  <!-- Your Salesforce Organization ID (from Setup → Company Information) -->
-  <input type="hidden" name="oid" value="00DgK000008nnhJ">
-  <!-- Where to redirect after submit -->
-  <input type="hidden" name="retURL" value="https://www.google.com">
+   <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-  <!-- DEBUG: get error details to your email -->
-  <input type="hidden" name="debug" value="1">
-  <input type="hidden" name="debugEmail" value="YOUR_EMAIL@example.com">
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-  <!-- Required fields for Lead -->
-  <input id="last_name" name="last_name" type="text" placeholder="Last Name" required>
-  <input id="company" name="company" type="text" placeholder="Company" required>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
-  <button type="submit">Submit</button>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DgK000008nnhJ" method="POST">
+
+<input type=hidden name="oid" value="00DgK000008nnhJ">
+<input type="hidden" name="retURL" value="https://www.google.com">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="sushmithab458@gmail.com">                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+Message:<input  id="00NgK00001LJDjK" maxlength="100" name="00NgK00001LJDjK" size="20" type="text" /><br>
+
+<input type="submit" name="submit">
+
 </form>
+
     </div>
   </section>
 
